@@ -1,0 +1,49 @@
+3) Attached Policies:- S3-Permissions_management
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:ObjectOwnerOverrideToBucketOwner",
+                "s3:PutMultiRegionAccessPointPolicy",
+                "s3:PutObjectVersionAcl",
+                "s3:BypassGovernanceRetention",
+                "s3:PutObjectAcl"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*/*",
+                "arn:aws:s3::459837257553:accesspoint/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutAccessPointPolicyForObjectLambda",
+                "s3:PutBucketPublicAccessBlock",
+                "s3:DeleteAccessPointPolicyForObjectLambda",
+                "s3:PutBucketAcl",
+                "s3:PutBucketPolicy",
+                "s3:DeleteAccessPointPolicy",
+                "s3:DeleteBucketPolicy",
+                "s3:PutAccessPointPolicy"
+            ],
+            "Resource": [
+                "arn:aws:s3:*:459837257553:accesspoint/*",
+                "arn:aws:s3:::*",
+                "arn:aws:s3-object-lambda:*:459837257553:accesspoint/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutAccountPublicAccessBlock",
+                "s3:PutAccessPointPublicAccessBlock"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

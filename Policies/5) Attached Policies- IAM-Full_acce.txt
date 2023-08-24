@@ -1,0 +1,67 @@
+5) Attached Policies- IAM-Full_access
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GenerateCredentialReport",
+                "iam:GetAccountPasswordPolicy",
+                "iam:UpdateCloudFrontPublicKey",
+                "iam:GetServiceLastAccessedDetailsWithEntities",
+                "iam:ListServerCertificates",
+                "iam:SetSTSRegionalEndpointStatus",
+                "iam:GetServiceLastAccessedDetails",
+                "iam:ListVirtualMFADevices",
+                "iam:GetOrganizationsAccessReport",
+                "iam:SetSecurityTokenServicePreferences",
+                "iam:UpdateAccountName",
+                "iam:SimulateCustomPolicy",
+                "iam:GetAccountEmailAddress",
+                "iam:GetCloudFrontPublicKey",
+                "iam:CreateAccountAlias",
+                "iam:UpdateAccountEmailAddress",
+                "iam:GetAccountAuthorizationDetails",
+                "iam:DeleteCloudFrontPublicKey",
+                "iam:DeleteAccountAlias",
+                "iam:GetCredentialReport",
+                "iam:ListPolicies",
+                "iam:DeleteAccountPasswordPolicy",
+                "iam:ListSAMLProviders",
+                "iam:ListCloudFrontPublicKeys",
+                "iam:ListRoles",
+                "iam:ListInstanceProfiles",
+                "iam:UploadCloudFrontPublicKey",
+                "iam:GetContextKeysForCustomPolicy",
+                "iam:UpdateAccountPasswordPolicy",
+                "iam:ListOpenIDConnectProviders",
+                "iam:GetAccountName",
+                "iam:ListAccountAliases",
+                "iam:ListUsers",
+                "iam:ListGroups",
+                "iam:ListSTSRegionalEndpointsStatus",
+                "iam:GetAccountSummary"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "iam:*",
+            "Resource": [
+                "arn:aws:iam::459837257553:saml-provider/*",
+                "arn:aws:iam::459837257553:user/*",
+                "arn:aws:iam::459837257553:policy/*",
+                "arn:aws:iam::459837257553:access-report/*",
+                "arn:aws:iam::459837257553:oidc-provider/*",
+                "arn:aws:iam::459837257553:server-certificate/*",
+                "arn:aws:iam::459837257553:group/*",
+                "arn:aws:iam::459837257553:role/*",
+                "arn:aws:iam::459837257553:sms-mfa/*",
+                "arn:aws:iam::459837257553:mfa/*",
+                "arn:aws:iam::459837257553:instance-profile/*"
+            ]
+        }
+    ]
+}
